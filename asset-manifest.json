@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/console-bio/static/css/main.8053ee1a.css",
-    "main.js": "/console-bio/static/js/main.c40c01c3.js",
+    "main.js": "/console-bio/static/js/main.d8aac7c5.js",
     "index.html": "/console-bio/index.html",
     "main.8053ee1a.css.map": "/console-bio/static/css/main.8053ee1a.css.map",
-    "main.c40c01c3.js.map": "/console-bio/static/js/main.c40c01c3.js.map"
+    "main.d8aac7c5.js.map": "/console-bio/static/js/main.d8aac7c5.js.map"
   },
   "entrypoints": [
     "static/css/main.8053ee1a.css",
-    "static/js/main.c40c01c3.js"
+    "static/js/main.d8aac7c5.js"
   ]
 }
