@@ -15,7 +15,7 @@ drwxr-xr-x 3 root      root      4096 Sep 13 11:00 ..
 -rw-r--r-- 1 fidis fidis 3526 Sep 13 10:00 .bashrc
 -rw-r--r-- 1 fidis fidis  807 Sep 13 10:00 .profile` },
     { cmd: 'cat bio.txt', result: `Name: fidis
-Age: ??
+Age: ?? 
 Skills: Unix, Python, C, Bug bounty, Pentest, Red Team
 Achievements: ??` },
   ];
@@ -24,6 +24,9 @@ Achievements: ??` },
 
   useEffect(() => {
     const animateCommands = async () => {
+      // Добавляем задержку перед началом выполнения команд
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Задержка 2 секунды
+
       for (const { cmd, result } of commands) {
         // Анимация ввода команды
         setCurrentInput(prompt);
