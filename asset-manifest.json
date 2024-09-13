@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/calorama/console-bio/static/css/main.8053ee1a.css",
+    "main.js": "/calorama/console-bio/static/js/main.207b9769.js",
+    "index.html": "/calorama/console-bio/index.html",
+    "main.8053ee1a.css.map": "/calorama/console-bio/static/css/main.8053ee1a.css.map",
+    "main.207b9769.js.map": "/calorama/console-bio/static/js/main.207b9769.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8053ee1a.css",
+    "static/js/main.207b9769.js"
+  ]
+}
