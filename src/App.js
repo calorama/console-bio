@@ -25,20 +25,20 @@ Achievements: ??` },
   useEffect(() => {
     const animateCommands = async () => {
       // Добавляем задержку перед началом выполнения команд
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Задержка 2 секунды
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Задержка 2 секунды
 
       for (const { cmd, result } of commands) {
         // Анимация ввода команды
         setCurrentInput(prompt);
         let commandInput = '';
         for (const char of cmd) {
-          await new Promise(resolve => setTimeout(resolve, 50));
+          await new Promise(resolve => setTimeout(resolve, 57)); // Уменьшена задержка между символами
           commandInput += char;
           setCurrentInput(`${prompt}${commandInput}`);
         }
 
         // Небольшая пауза после ввода команды
-        await new Promise(resolve => setTimeout(resolve, 300));
+        await new Promise(resolve => setTimeout(resolve, 100)); // Уменьшена пауза
 
         // Обновление состояния
         setOutput(prev => {
@@ -60,7 +60,7 @@ Achievements: ??` },
         }
 
         // Пауза перед следующей командой
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 500)); // Уменьшена пауза
       }
     };
 
